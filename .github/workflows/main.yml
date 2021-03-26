@@ -25,6 +25,6 @@ jobs:
         npm install @angular/cli -g
         cd ./src
         cp ./src/environments/environment.sample.ts ./src/environments/environment.ts
-        cp ./src/environments/environment.sample.ts ./src/environments/environment.prod.ts
+        sed 's/google-map-api-key${{ secrets.GOOGLE_MAP_API_KEY }}/g' <./src/environments/environment.sample.ts >./src/environments/environment.prod.ts
         npm ci
         ng deploy --base-href=/City_past_frontend/ --name="Me" --email="75669064+natlex-to-me@users.noreply.github.com" --no-silent
