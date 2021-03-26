@@ -22,7 +22,7 @@ jobs:
       env:
         GITHUB_TOKEN: ${{ secrets.MY_TOK }}
       run: |
-        npm install @angular/cli
+        npm install @angular/cli -g
         cd ./src
         cp ./src/environments/environment.sample.ts ./src/environments/environment.ts
         cp ./src/environments/environment.sample.ts ./src/environments/environment.prod.ts
