@@ -22,5 +22,6 @@ jobs:
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       run: |
-        npm install
+        npm install @angular/cli
+        npm ci
         npm run ng -- deploy --base-href=/City_past_frontend/
