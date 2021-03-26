@@ -27,4 +27,4 @@ jobs:
         cp ./src/environments/environment.sample.ts ./src/environments/environment.ts
         cp ./src/environments/environment.sample.ts ./src/environments/environment.prod.ts
         npm ci
-        npm run ng -- deploy --base-href=/City_past_frontend/
+        ng deploy --base-href=/City_past_frontend/ --no-silent
