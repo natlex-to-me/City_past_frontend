@@ -134,9 +134,16 @@
               "devServerTarget": "City-past:serve:production"
             }
           }
+        },
+        "deploy": {
+          "builder": "angular-cli-ghpages:deploy",
+          "options": {}
         }
       }
     }
   },
-  "defaultProject": "City-past"
+  "defaultProject": "City-past",
+  "cli": {
+    "analytics": false
+  }
 }
