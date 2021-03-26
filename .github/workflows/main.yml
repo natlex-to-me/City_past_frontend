@@ -24,5 +24,7 @@ jobs:
       run: |
         npm install @angular/cli
         cd ./src
+        cp ./environments/environment.sample.ts ./environments/environment.ts
+        cp ./environments/environment.sample.ts ./environments/environment.prod.ts
         npm ci
         npm run ng -- deploy --base-href=/City_past_frontend/
