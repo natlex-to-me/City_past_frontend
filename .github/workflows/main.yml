@@ -20,7 +20,7 @@ jobs:
 
     - name: Prepare and deploy
       env:
-        GITHUB_TOKEN: ${{ secrets.MY_TOK }},
+        GITHUB_TOKEN: ${{ secrets.MY_TOK }}
       run: |
         npm install @angular/cli -g
         cd ./src
